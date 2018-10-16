@@ -7,3 +7,47 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+/*grid code for header*/
+.header
+{
+  display: grid;
+  grid-template-areas:
+  "name";
+  grid-template-columns: repeat(1, 1fr);
+}
+h1
+{
+  grid-area: name;
+}
+/*grid code for navigation*/
+.main-nav
+{
+  display: grid;
+  grid-template-areas:
+  "about-link resume-link course-link";
+  grid-template-columns: auto;
+}
+.about-index
+{
+  grid-area: about-link;
+}
+.resume-index
+{
+  grid-area: resume-link;
+}
+.course-index
+{
+  grid-area: course-link;
+}
+/*grid code for footer*/
+footer
+{
+  display: grid;
+  grid-template-areas:
+  "foot";
+  grid-template-columns: auto;
+}
+.footer
+{
+  grid-area: foot;
+}
