@@ -7,6 +7,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+img
+{
+  max-width: 50%;
+}
 /*grid code for header*/
 .header
 {
@@ -23,7 +27,7 @@ h1
 .main-nav
 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 /*grid code for footer*/
@@ -37,4 +41,154 @@ footer
 .footer
 {
   grid-area: foot;
+}
+/*grid code for resume nav*/
+#resume-links
+{
+  display: grid;
+  grid-template-areas:
+  "edu-link work-link"
+  "skills-link com-link";
+  grid-template-columns: repeat(2, .5fr);
+}
+#edu-link
+{
+  grid-area: edu-link;
+}
+#work-link
+{
+  grid-area: work-link;
+}
+#skills-link
+{
+  grid-area: skills-link;
+}
+#comm-link
+{
+  grid-area: com-link;
+}
+/*grid code for resume sections*/
+#main-content
+{
+  display: grid;
+  grid-template-areas:
+  "about"
+  "edu"
+  "work"
+  "skill"
+  "comm";
+  grid-template-columns: repeat(1, auto);
+}
+#about-me
+{
+  grid-area: about;
+}
+#education
+{
+  grid-area: edu;
+}
+#work-experince
+{
+  grid-area: work;
+}
+#skills
+{
+  grid-area: skill;
+}
+#community
+{
+  grid-area: comm;
+}
+/*grid for about page */
+#info
+{
+  display: grid;
+  grid-template-areas:
+  "hist"
+  "edu-a"
+  "work-a"
+  "hist";
+  grid-template-columns: repeat(1, auto);
+}
+#history
+{
+  grid-area: hist;
+}
+#edu-about
+{
+  grid-area: edu-a;
+}
+#work-about
+{
+  grid-area: work-a;
+}
+#hobbies
+{
+  grid-area: hist;
+}
+/*gris for course*/
+#course-list
+{
+  display: grid;
+  grid-template-areas:
+  "commu com-sc"
+  "eco his"
+  "ipro itmd"
+  "maths phils"
+  "phy pol-sc"
+  "psycs socs"
+  "sscia";
+  grid-template-columns: repeat(2, 1fr);
+}
+#com
+{
+  grid-area: commu;
+}
+#cs
+{
+  grid-area: com-sc;
+}
+#econ
+{
+  grid-area: eco;
+}
+#hist
+{
+  grid-area: his;
+}
+#ipro
+{
+  grid-area: ipro;
+}
+#itmd
+{
+  grid-area: itmd;
+}
+#math
+{
+  grid-area: maths;
+}
+#phil
+{
+  grid-area: phils;
+}
+#phys
+{
+  grid-area: phy;
+}
+#ps
+{
+  grid-area: pol-sc;
+}
+#psyc
+{
+  grid-area: psycs;
+}
+#soc
+{
+  grid-area: socs;
+}
+#ssci
+{
+  grid-area: sccia;
 }
