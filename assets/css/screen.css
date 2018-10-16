@@ -22,23 +22,10 @@ h1
 /*grid code for navigation*/
 .main-nav
 {
-  display: grid;
-  grid-template-areas:
-  "about-link resume-link course-link";
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
 }
-.about-index
-{
-  grid-area: about-link;
-}
-.resume-index
-{
-  grid-area: resume-link;
-}
-.course-index
-{
-  grid-area: course-link;
-}
+
 /*grid code for footer*/
 footer
 {
