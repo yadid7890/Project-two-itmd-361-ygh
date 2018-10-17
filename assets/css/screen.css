@@ -49,7 +49,7 @@ footer
   grid-template-areas:
   "edu-link work-link"
   "skills-link com-link";
-  grid-template-columns: repeat(2, .5fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 #edu-link
 {
@@ -104,11 +104,9 @@ footer
 {
   display: grid;
   grid-template-areas:
-  "hist"
-  "edu-a"
-  "work-a"
-  "hist";
-  grid-template-columns: repeat(1, auto);
+  "hist hob"
+  "work-a edu-a";
+  grid-template-columns: repeat(2, auto);
 }
 #history
 {
@@ -124,10 +122,10 @@ footer
 }
 #hobbies
 {
-  grid-area: hist;
+  grid-area: hob;
 }
-/*gris for course*/
-#course-list
+/*grid for course page navigation*/
+.list-all-courses
 {
   display: grid;
   grid-template-areas:
@@ -137,7 +135,7 @@ footer
   "maths phils"
   "phy pol-sc"
   "psycs socs"
-  "sscia";
+  "sscia .";
   grid-template-columns: repeat(2, 1fr);
 }
 #com
