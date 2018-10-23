@@ -49,6 +49,8 @@ footer
   grid-template-areas:
   "foot";
   grid-template-columns: auto;
+  font-size: 1.333em;
+  padding: 5%;
 }
 .footer
 {
@@ -62,6 +64,8 @@ footer
   "edu-link work-link"
   "skills-link com-link";
   grid-template-columns: repeat(2, 1fr);
+  background-color: red;
+  text-align: center;
 }
 #edu-link
 {
@@ -119,22 +123,31 @@ footer
   "hist hob"
   "work-a edu-a";
   grid-template-columns: repeat(2, auto);
+
 }
 #history
 {
   grid-area: hist;
+  background-color: silver;
+  padding: 5%;
 }
 #edu-about
 {
   grid-area: edu-a;
+  background-color: silver;
+  padding: 5%;
 }
 #work-about
 {
   grid-area: work-a;
+  background-color: silver;
+  padding: 5%;
 }
 #hobbies
 {
   grid-area: hob;
+  background-color: silver;
+  padding: 5%;
 }
 /*grid for course page navigation*/
 .list-all-courses
@@ -222,9 +235,18 @@ h1
   padding: 5%;
 
 }
+h2 {
+  font-size: 1.5em;
+  background-color: pink;
+  padding: 5%;
+}
 .navigation
 {
   font-size: 1.333em;
   line-height: 1.125em;
   font-kerning: .563em;
+}
+.main-index
+{
+  background-color: pink;
 }
