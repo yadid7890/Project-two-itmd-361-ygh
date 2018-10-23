@@ -29,6 +29,13 @@ img {
   /*Style code for h1*/
 h1 {
   grid-area: name;
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3.157em;
+  line-height: 1.2em;
+  margin-bottom: 2%;
+  padding: 3%;
 }
   /*Code for about main pages navigations (about me, my resume, my course catalog)*/
       /*flex*/
@@ -37,26 +44,202 @@ h1 {
   flex-direction: row;
   background-color: lightblue;
   padding: 5%;
+  font-kerning: .0463em;
+}
+.main-index {
+  background-color: pink;
 }
       /*Style*/
+li {
+  padding: 3%;
+}
+a {
+  text-decoration: none;
+  font-size: 1.3em;
+}
   /*Code for footer*/
       /*Grid*/
+footer {
+  background-color: lightblue;
+  display: grid;
+  grid-template-areas:
+  "foot";
+  font-size: 1.333em;
+  padding: 3%;
+}
+.footer {
+  grid-area: foot;
+}
       /*Style*/
 
 /*Style code for h2 */
-
+h2 {
+  font-size: 1.5em;
+  background-color: pink;
+  padding: 5%;
+}
 /*Style for for text/p*/
 
-/*Code for my resume page content*/
+/*Code for more about me page content*/
     /*Grid*/
+#info {
+  display: grid;
+  grid-template-areas:
+  "hist"
+  "hob"
+  "work-a"
+  "edu-a";
+  grid-template-columns: repeat(1, auto);
+}
+#history {
+  grid-area: hist;
+  background-color: silver;
+  padding: 5%;
+}
+#edu-about {
+  grid-area: edu-a;
+  background-color: silver;
+  padding: 5%;
+}
+#work-about {
+  grid-area: work-a;
+  background-color: silver;
+  padding: 5%;
+}
+#hobbies {
+  grid-area: hob;
+  background-color: silver;
+  padding: 5%;
+}
     /*Style*/
 
+/*Code for my resume page content*/
+    /*Grid for resume nav*/
+#resume-links {
+  display: grid;
+  grid-template-areas:
+  "edu-link work-link"
+  "skills-link com-link";
+  grid-template-columns: repeat(2, 1fr);
+  background-color: yellow;
+}
+#edu-link {
+  grid-area: edu-link;
+}
+#work-link {
+  grid-area: work-link;
+}
+#skills-link {
+  grid-area: skills-link;
+}
+#comm-link {
+  grid-area: com-link;
+}
+/*grid code for resume sections*/
+#main-content-resume {
+  display: grid;
+  grid-template-areas:
+  "about"
+  "edu"
+  "work"
+  "skill"
+  "comm";
+  grid-template-columns: repeat(1, auto);
+}
+#about-me {
+  grid-area: about;
+}
+#education {
+  grid-area: edu;
+}
+#work-experince {
+  grid-area: work;
+}
+#skills {
+  grid-area: skill;
+}
+#community {
+  grid-area: comm;
+}
+    /*Style for individual portions*/
+
 /*Code my course catalog page content  */
-    /*Grid*/
+    /*flex code for course navigation*/
+#course-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 33.333%;
+  background-color: pink;
+  flex-direction: row;
+}
+    /*grid code for list of courses */
+.list-all-courses {
+  display: grid;
+  grid-template-areas:
+  "commu com-sc"
+  "eco his"
+  "ipro itmd"
+  "maths phils"
+  "phy pol-sc"
+  "psycs socs"
+  "sscia sscia";
+  grid-template-columns: repeat(2, 1fr);
+}
+#com {
+  grid-area: commu;
+  background-color: yellow;
+}
+#cs {
+  grid-area: com-sc;
+  background-color: yellow;
+}
+#econ {
+  grid-area: eco;
+  background-color: yellow;
+}
+#hist {
+  grid-area: his;
+  background-color: yellow;
+}
+#ipro {
+  grid-area: ipro;
+  background-color: yellow;
+}
+#itmd {
+  grid-area: itmd;
+  background-color: yellow;
+}
+#math {
+  grid-area: maths;
+  background-color: yellow;
+}
+#phil {
+  grid-area: phils;
+  background-color: yellow;
+}
+#phys {
+  grid-area: phy;
+  background-color: yellow;
+}
+#ps {
+  grid-area: pol-sc;
+  background-color: yellow;
+}
+#psyc {
+  grid-area: psycs;
+  background-color: yellow;
+}
+#soc {
+  grid-area: socs;
+  background-color: yellow;
+}
+#ssci {
+  grid-area: sscia;
+  background-color: yellow;
+}
     /*Style*/
     /*Style code for my course catalag course navigation */
 
-/* */
 /* */
 /* */
 /* */
