@@ -9,41 +9,34 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 https://www.modularscale.com/?16,18&px&1.333 */
 
 /* Begin site styles below */
-img
-{
+img {
   max-width: 91%;
   display: block;
   border: 1em double lightblue;
 }
 /*grid code for header*/
-.header
-{
+.header {
   display: grid;
   grid-template-areas:
   "name";
   grid-template-columns: repeat(1, 1fr);
 }
-h1
-{
+h1 {
   grid-area: name;
 }
 /*grid code for navigation*/
-.main-nav
-{
+.main-nav {
   display: flex;
   flex-direction: row;
   background-color: lightblue;
   padding: 5%;
 }
-li
-{
+li {
   padding: 5%;
   text-decoration: none;
 }
-
 /*grid code for footer*/
-footer
-{
+footer {
   background-color: lightblue;
   display: grid;
   grid-template-areas:
@@ -52,13 +45,11 @@ footer
   font-size: 1.333em;
   padding: 5%;
 }
-.footer
-{
+.footer {
   grid-area: foot;
 }
 /*grid code for resume nav*/
-#resume-links
-{
+#resume-links {
   display: grid;
   grid-template-areas:
   "edu-link work-link"
@@ -67,25 +58,20 @@ footer
   background-color: red;
   text-align: center;
 }
-#edu-link
-{
+#edu-link {
   grid-area: edu-link;
 }
-#work-link
-{
+#work-link {
   grid-area: work-link;
 }
-#skills-link
-{
+#skills-link {
   grid-area: skills-link;
 }
-#comm-link
-{
+#comm-link {
   grid-area: com-link;
 }
 /*grid code for resume sections*/
-#main-content
-{
+#main-content {
   display: grid;
   grid-template-areas:
   "about"
@@ -95,29 +81,23 @@ footer
   "comm";
   grid-template-columns: repeat(1, auto);
 }
-#about-me
-{
+#about-me {
   grid-area: about;
 }
-#education
-{
+#education {
   grid-area: edu;
 }
-#work-experince
-{
+#work-experince {
   grid-area: work;
 }
-#skills
-{
+#skills {
   grid-area: skill;
 }
-#community
-{
+#community {
   grid-area: comm;
 }
 /*grid for about page */
-#info
-{
+#info {
   display: grid;
   grid-template-areas:
   "hist hob"
@@ -125,33 +105,28 @@ footer
   grid-template-columns: repeat(2, auto);
 
 }
-#history
-{
+#history {
   grid-area: hist;
   background-color: silver;
   padding: 5%;
 }
-#edu-about
-{
+#edu-about {
   grid-area: edu-a;
   background-color: silver;
   padding: 5%;
 }
-#work-about
-{
+#work-about {
   grid-area: work-a;
   background-color: silver;
   padding: 5%;
 }
-#hobbies
-{
+#hobbies {
   grid-area: hob;
   background-color: silver;
   padding: 5%;
 }
 /*grid for course page navigation*/
-.list-all-courses
-{
+.list-all-courses {
   display: grid;
   grid-template-areas:
   "commu com-sc"
@@ -160,59 +135,46 @@ footer
   "maths phils"
   "phy pol-sc"
   "psycs socs"
-  "sscia .";
+  "sscia sscia";
   grid-template-columns: repeat(2, 1fr);
 }
-#com
-{
+#com {
   grid-area: commu;
 }
-#cs
-{
+#cs {
   grid-area: com-sc;
 }
-#econ
-{
+#econ {
   grid-area: eco;
 }
-#hist
-{
+#hist {
   grid-area: his;
 }
-#ipro
-{
+#ipro {
   grid-area: ipro;
 }
-#itmd
-{
+#itmd {
   grid-area: itmd;
 }
-#math
-{
+#math {
   grid-area: maths;
 }
-#phil
-{
+#phil {
   grid-area: phils;
 }
-#phys
-{
+#phys {
   grid-area: phy;
 }
-#ps
-{
+#ps {
   grid-area: pol-sc;
 }
-#psyc
-{
+#psyc {
   grid-area: psycs;
 }
-#soc
-{
+#soc {
   grid-area: socs;
 }
-#ssci
-{
+#ssci {
   grid-area: sccia;
 }
 /* code for course catalog's links*/
@@ -220,12 +182,11 @@ footer
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 33.333%;
-  background-color: black;
+  background-color: pink;
   flex-direction: row;
 }
 /*style code*/
-h1
-{
+h1 {
   background-color: lightblue;
   display: flex;
   flex-wrap: wrap;
@@ -240,13 +201,11 @@ h2 {
   background-color: pink;
   padding: 5%;
 }
-.navigation
-{
+.navigation {
   font-size: 1.333em;
   line-height: 1.125em;
   font-kerning: .563em;
 }
-.main-index
-{
+.main-index {
   background-color: pink;
 }
