@@ -25,6 +25,7 @@ img {
   grid-template-areas:
   "name";
   grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, auto);
 }
   /*Style code for h1*/
 h1 {
