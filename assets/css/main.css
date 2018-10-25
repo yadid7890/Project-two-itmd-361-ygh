@@ -46,7 +46,7 @@ h1 {
   flex-wrap: wrap;
   font-size: 4.3em;
   line-height: 1em;
-  padding: 25%;
+  padding: 15%;
 }
   /*Code for about main pages navigations (about me, my resume, my course catalog)*/
       /*flex*/
@@ -58,25 +58,24 @@ h1 {
 }
 .about-index {
   padding-bottom: 10%;
+  padding-left: 15%;
   padding-top: 20%;
-  text-align: center;
 }
 .resume-index {
   padding-bottom: 10%;
+  padding-left: 15%;
   padding-top: 10%;
-  text-align: center;
 }
 .course-index {
   padding-bottom: 20%;
+  padding-left: 15%;
   padding-top: 10%;
-  text-align: center;
 }
-
 .main-index {
   background-color: yellow;
   padding-bottom: 5%;
+  padding-left: 15%;
   padding-top: 5%;
-  text-align: center;
 }
       /*Style*/
 a {
@@ -140,7 +139,7 @@ h2 {
   "edu-link work-link"
   "skills-link com-link";
   grid-template-columns: repeat(2, 1fr);
-  background-color: yellow;
+  background-color: orange;
 }
 #edu-link {
   grid-area: edu-link;
@@ -203,12 +202,11 @@ h4 {
   flex-direction: column;
 }
 .class-list {
-  padding: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-top: 1%;
 }
-
-
-
-
 
 /*add back button to buttom of pages*/
 
