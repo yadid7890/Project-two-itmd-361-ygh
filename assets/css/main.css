@@ -8,12 +8,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*modular scale is perfect fourth (1.333em)
 https://www.modularscale.com/?16px&1.333*/
+/*FONT SIZES
+p=1em
+h1/header=
+h2=
+h3=
+h4=
+navigation=
+footer links=
 
 /* Begin site styles below */
 
 /*Code for main image*/
 img {
-  max-width: 91%;
+  max-width: 100%;
   display: block;
   border: 1em double lightblue;
 }
@@ -33,7 +41,6 @@ h1 {
   background-color: lightblue;
   display: flex;
   flex-wrap: wrap;
-  font-size: 3.157em;
   line-height: 1.2em;
   margin-bottom: 2%;
   padding: 3%;
@@ -56,7 +63,6 @@ li {
 }
 a {
   text-decoration: none;
-  font-size: 1.3em;
 }
   /*Code for footer*/
       /*Grid*/
@@ -65,7 +71,6 @@ footer {
   display: grid;
   grid-template-areas:
   "foot";
-  font-size: 1.333em;
   padding: 3%;
 }
 .footer {
@@ -75,7 +80,6 @@ footer {
 
 /*Style code for h2 */
 h2 {
-  font-size: 1.5em;
   background-color: pink;
   padding: 5%;
 }
@@ -163,6 +167,12 @@ h2 {
   grid-area: comm;
 }
     /*Style for individual portions*/
+h3 {
+
+}
+h4 {
+
+}
 
 /*Code my course catalog page content  */
     /*flex code for course navigation*/
