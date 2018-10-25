@@ -233,10 +233,14 @@ h4 {
   background-color: aqua;
   padding: 5%;
 }
-#course-list li {
-  border: 1%;
-  border-color: yellow;
+.course-menu-link {
+  padding: 1%;
+  border: thick solid white;
 }
+.class-name-link {
+  padding: 3%;
+}
+
 /*add back button to buttom of pages*/
 
 
@@ -314,7 +318,11 @@ h4 {
     /*Style*/
     /*Style code for my course catalag course navigation */
 
-/* */
+/*Queries */
+
+@media screen and (min-width: 800px) {
+
+}
 /* */
 /* */
 /* */
