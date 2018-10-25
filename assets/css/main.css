@@ -28,38 +28,39 @@ img {
 
 /*Style code for content in all pages*/
   /*Style code for header*/
-.header {
-  display: grid;
-  grid-template-areas:
-  "name";
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, auto);
+p {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+}
+footer {
+
 }
   /*Style code for h1*/
 h1 {
-  grid-area: name;
-  background-color: lightblue;
+  background-color: red;
   display: flex;
   flex-wrap: wrap;
-  line-height: 1.2em;
-  margin-bottom: 2%;
+  font-size: 4.3em;
+  line-height: 1em;
   padding: 3%;
 }
   /*Code for about main pages navigations (about me, my resume, my course catalog)*/
       /*flex*/
 .main-nav {
+  background-color: lightblue;
   display: flex;
   flex-direction: row;
-  background-color: lightblue;
-  padding: 5%;
-  font-kerning: .0463em;
+  font-size: 1.44em;
+  padding: 2%;
 }
+
 .main-index {
   background-color: pink;
 }
       /*Style*/
 li {
-  padding: 3%;
+  padding: 2%;
 }
 a {
   text-decoration: none;
@@ -81,7 +82,9 @@ footer {
 /*Style code for h2 */
 h2 {
   background-color: pink;
-  padding: 5%;
+  font-size: 2.488em;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 /*Style for for text/p*/
 
@@ -99,22 +102,18 @@ h2 {
 #history {
   grid-area: hist;
   background-color: silver;
-  padding: 5%;
 }
 #edu-about {
   grid-area: edu-a;
   background-color: silver;
-  padding: 5%;
 }
 #work-about {
   grid-area: work-a;
   background-color: silver;
-  padding: 5%;
 }
 #hobbies {
   grid-area: hob;
   background-color: silver;
-  padding: 5%;
 }
     /*Style*/
 
