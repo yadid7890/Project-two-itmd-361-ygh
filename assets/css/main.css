@@ -29,9 +29,11 @@ img {
 /*Style code for content in all pages*/
   /*Style code for header*/
 p {
+  line-height: 1.5em;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
+  padding-bottom: 1%;
 }
 .foot {
   font-size: 1.728em;
@@ -54,22 +56,22 @@ h1 {
   background-color: lightblue;
   display: flex;
   flex-direction: column;
-  font-size: 1.44em;
+  font-size: 1.7em;
 }
 .about-index {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   padding-left: 15%;
-  padding-top: 20%;
+  padding-top: 5%;
 }
 .resume-index {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   padding-left: 15%;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .course-index {
-  padding-bottom: 20%;
+  padding-bottom: 5%;
   padding-left: 15%;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .main-index {
   background-color: yellow;
@@ -80,6 +82,7 @@ h1 {
       /*Style*/
 a {
   text-decoration: none;
+  color: gray;
 }
   /*Code for footer*/
       /*Grid*/
@@ -87,8 +90,8 @@ footer {
   background-color: green;
   display: flex;
   flex-direction: column;
-  padding-top: 2%;
-  padding-bottom: 1%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   text-align: center;
 }
       /*Style*/
@@ -99,6 +102,8 @@ h2 {
   font-size: 2.488em;
   padding-top: 5%;
   padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 /*Style for for text/p*/
 
@@ -134,21 +139,28 @@ h2 {
 /*Code for my resume page content*/
     /*Grid for resume nav*/
 #resume-links {
+  background-color: orange;
   display: grid;
   grid-template-areas:
   "edu-link work-link"
   "skills-link com-link";
   grid-template-columns: repeat(2, 1fr);
-  background-color: orange;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 1.444em;
 }
 #edu-link {
   grid-area: edu-link;
+  padding-left: 10%;
+  padding-bottom: 5%;
 }
 #work-link {
   grid-area: work-link;
+  padding-bottom: 5%;
 }
 #skills-link {
   grid-area: skills-link;
+  padding-left: 10%;
 }
 #comm-link {
   grid-area: com-link;
@@ -179,22 +191,38 @@ h2 {
 #community {
   grid-area: comm;
 }
-    /*Style for individual portions*/
+/*style for resume pages*/
+.description {
+  background-color: silver;
+  padding: 5%;
+}
+    /*Style for individual portions in resume*/
 h3 {
-
+  background-color: pink;
+  font-size: 1.728em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 h4 {
-
+  background-color: gold;
+  font-size: 1.44em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-
 /*Code my course catalog page content  */
     /*flex code for course navigation*/
 #course-list {
+  background-color: blue;
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 33.333%;
-  background-color: pink;
   flex-direction: row;
+  font-size: 1.2em;
+  padding: 5%;
 }
 /*flex code for course list*/
 .list-all-courses {
@@ -202,12 +230,13 @@ h4 {
   flex-direction: column;
 }
 .class-list {
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
-  padding-top: 1%;
+  background-color: aqua;
+  padding: 5%;
 }
-
+#course-list li {
+  border: 1%;
+  border-color: yellow;
+}
 /*add back button to buttom of pages*/
 
 
