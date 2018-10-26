@@ -216,14 +216,15 @@ h4 {
 /*Code my course catalog page content  */
     /*flex code for course navigation*/
 #course-list {
-  background-color: blue;
+  background-color: orange;
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 33.333%;
   flex-direction: row;
   font-size: 1em;
-  padding: 3%;
+  padding: 5%;
 }
+
 /*flex code for course list*/
 .list-all-courses {
   display: flex;
