@@ -55,29 +55,8 @@ h1 {
 .main-nav {
   background-color: lightblue;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 1.7em;
-}
-.about-index {
-  padding-bottom: 5%;
-  padding-left: 15%;
-  padding-top: 5%;
-}
-.resume-index {
-  padding-bottom: 5%;
-  padding-left: 15%;
-  padding-top: 5%;
-}
-.course-index {
-  padding-bottom: 5%;
-  padding-left: 15%;
-  padding-top: 5%;
-}
-.main-index {
-  background-color: yellow;
-  padding-bottom: 5%;
-  padding-left: 15%;
-  padding-top: 5%;
 }
       /*Style*/
 a {
