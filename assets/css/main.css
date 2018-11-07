@@ -52,17 +52,35 @@ h1 {
 }
   /*Code for about main pages navigations (about me, my resume, my course catalog)*/
       /*flex*/
-.main-nav {
+.main-nav { /*ul element*/
   background-color: lightblue;
   display: flex;
-  flex-direction: row;
+  flex-wrap: row wrap;
   font-size: 1.7em;
 }
-      /*Style*/
-a {
-  text-decoration: none;
-  color: gray;
+#navigation li {
+  flex: 1 1 auto;
 }
+#navigation a {
+  padding: .6111em 0; /*11px/18px=.6111em    .6111em is for top and bottom, 0 is for left and right*/
+  background-color: white;
+  border: 1px solid green;
+  border-radius: .5em;
+  color: green;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+#home #nav-hom,
+#resume #nav-res,
+#about #nav-abo,
+#courses #nav-cou,
+nav a:hover,
+nav a:active{
+  background: green;
+  color: white;
+}
+
   /*Code for footer*/
       /*Grid*/
 footer {
