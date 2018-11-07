@@ -25,8 +25,8 @@ footer links=
 img {
   max-width: 100%;
   display: block;
-  border: .5em solid lightgreen;
   margin-left: 10%;
+  margin-top: 10%;
 }
 /*Style code for h1*/
 h1 {
@@ -35,7 +35,7 @@ h1 {
   flex-wrap: wrap;
   font-size: 4.3em;
   line-height: 1.30435em;
-  padding: 15%;
+  padding: 10%;
 }
 /*Code for about main pages navigations (about me, my resume, my course catalog)*/
     /*flex*/
