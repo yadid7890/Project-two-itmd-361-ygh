@@ -21,17 +21,23 @@ navigation=
 footer links=
 
 /* Begin site styles below */
+html {
+  background-color: #E1DAC5;
+}
 /*Code for main image*/
 img {
   max-width: 100%;
   display: block;
   margin-left: 10%;
-  margin-top: 10%;
+  padding-top: 10%;
+}
+figure {
+  background-color: white;
 }
 /*Style code for p elements*/
 p {
   font-size: 1em;
-  line-height: 1.3;
+  line-height: 1.3em;
   padding-left: 1.3em;
   padding-right: 1.3em;
   padding-top: .65em;
@@ -39,7 +45,7 @@ p {
 }
 /*Style code for h1*/
 h1 {
-  background-color: tan;
+  background-color: #625C44;
   display: flex;
   flex-wrap: wrap;
   font-size: 4.3em;
@@ -48,14 +54,14 @@ h1 {
 }
 /*Style code for h2 */
 h2 {
-  background-color: pink;
+  background-color: #B5AD91;
   font-size: 2.074em;
   line-height: 1.29604em; /*33px*1.3= 43px/33.178px=1.29604em */
   padding: .64802em;
 }
 /*Style code for h3 */
 h3 {
-  background-color: black;
+  background-color: #524827;
   color: white;
   font-size: 1.44em;
   line-height: 1.29604em; /*33px*1.3= 43px/33.178px=1.29604em */
@@ -76,7 +82,7 @@ h3 {
 #main-nav { /*ul element*/
   display: flex;
   flex-wrap: row wrap;
-  font-size: 1em
+  font-size: 1.2em;
 }
 #navigation li {
   flex: 1 1 25%;
@@ -84,9 +90,9 @@ h3 {
 #navigation a {
   padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
   background-color: white;
-  border: 1px solid green;
+  border: 1px solid blue;
   border-radius: .5em;
-  color: green;
+  color: blue;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -97,7 +103,7 @@ h3 {
 #courses #nav-cou,
 nav a:hover,
 nav a:active {
-  background: green;
+  background: blue;
   color: white;
 }
 /*grid Code for more about me page content*/
@@ -143,7 +149,18 @@ nav a:active {
 }
 .description {
   background-color: silver;
+  line-height: 1.3em;
   padding: 10%;
+  list-style: circle;
+}
+/*style code for reume page*/
+#personal-info, #college-education, #college-awards, #list-skills {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  padding-left: 5%;
+}
+b {
+  font-weight: bold;
 }
 /*flex code for course navigation*/
 /*grid code for list of courses use with grid only**/
@@ -156,80 +173,79 @@ nav a:active {
   "maths phils"
   "phy pol-sc"
   "psycs socs"
-  "sscia .";
+  "sscia sscia";
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, auto);
 }
 a[href="#com"] {
   grid-area: commu;
-  background-color: yellow;
 }
 a[href="#cs"] {
   grid-area: com-sc;
-  background-color: yellow;
 }
 a[href="#econ"] {
   grid-area: eco;
-  background-color: yellow;
 }
 a[href="#hist"] {
   grid-area: his;
-  background-color: yellow;
 }
 a[href="#ipro"] {
   grid-area: ipro;
-  background-color: yellow;
 }
 a[href="#itmd"] {
   grid-area: itmd;
-  background-color: yellow;
 }
 a[href="#math"] {
   grid-area: maths;
-  background-color: yellow;
 }
 a[href="#phil"] {
   grid-area: phils;
-  background-color: yellow;
 }
 a[href="#phys"] {
   grid-area: phy;
-  background-color: yellow;
 }
 a[href="#ps"] {
   grid-area: pol-sc;
-  background-color: yellow;
 }
 a[href="#psyc"] {
   grid-area: psycs;
-  background-color: yellow;
 }
 a[href="#soc"] {
   grid-area: socs;
-  background-color: yellow;
 }
 a[href="#ssci"] {
   grid-area: sscia;
-  background-color: yellow;
 }
 #course-nav a {
-  padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
+  padding: .65625em .65625em; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
   background-color: purple;
   border: 1px solid lightgreen;
   border-radius: .25em;
   color: white;
   display: block;
+  font-size: 1.2em;
   text-align: center;
   text-decoration: none;
 }
 .class-name-link {
-  padding: 1.30208;
+  padding: .65625em;
   font-size: 1em;
+}
+/*Code for back button*/
+#back {
+  background-color: #E1DAC5;
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  padding-right: 5%;
+  text-align: right;
+  text-decoration: none;
 }
 
 /*Code for footer*/
     /*Grid*/
 footer {
-  background-color: green;
+  background-color: #625C44;
   display: flex;
   flex-direction: column;
   font-size: 1.44em;
@@ -237,4 +253,63 @@ footer {
   padding-top: 10%;
   padding-bottom: 10%;
   text-align: center;
+}
+@media screen and (min-width: 400px) {
+  img {
+    margin-left: 14%;
+  }
+}
+@media screen and (min-width: 500px) {
+  img {
+    margin-left: 21%;
+  }
+  html {
+    padding: 3%;
+  }
+  p {
+    padding-left: 2.6em;
+    padding-right: 2.6em;
+  }
+}
+@media screen and (min-width: 700px) {
+  img {
+    margin-left: 30%;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  .class-name-link {
+    padding: .65625em;
+    font-size: 1.2em;
+}
+@media screen and (min-width: 1000px) {
+  img {
+    margin-left: 36%; /*1000-291 = 709/1000= 71/2 =36%*/
+  }
+  p {
+    padding-left: 3.9em;
+    padding-right: 3.9em;
+  }
+  #main-nav { /*ul element*/
+    font-size: 1.44em;
+  }
+  h1 {
+    padding: 5%;
+  }
+  footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #back {
+    font-size: 1.44em;
+    line-height: 1.30201em;
+    padding-right: 10%;
+  }
+
+}
+@media screen and (min-width: 1500px) {
+  img {
+    margin-left: 41%;
+  }
 }
