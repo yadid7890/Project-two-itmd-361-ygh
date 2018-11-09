@@ -11,24 +11,15 @@ https://www.modularscale.com/?16px&1.2*/
 /*FONT SIZES
 p=1em= 16px
 line height= 130% or 1.30208em
-
-h1/header= 4.3em
-lh= 69px*1.3%= 90px/69px= 1.30435em
-h2=
-h3=
-h4=
-navigation=
-footer links=
-
 /* Begin site styles below */
 html {
   background-color: #E1DAC5;
 }
 /*Code for main image*/
 img {
-  max-width: 100%;
   display: block;
   margin-left: 10%;
+  max-width: 100%;
   padding-top: 10%;
 }
 figure {
@@ -38,14 +29,15 @@ figure {
 p {
   font-size: 1em;
   line-height: 1.3em;
+  padding-bottom: .65em;
   padding-left: 1.3em;
   padding-right: 1.3em;
   padding-top: .65em;
-  padding-bottom: .65em;
 }
 /*Style code for h1*/
 h1 {
   background-color: #625C44;
+  color: white;
   display: flex;
   flex-wrap: wrap;
   font-size: 4.3em;
@@ -88,12 +80,12 @@ h3 {
   flex: 1 1 25%;
 }
 #navigation a {
-  padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
   background-color: white;
-  border: 1px solid blue;
+  border: 1px solid #90876b;
   border-radius: .5em;
-  color: blue;
+  color: #90876b;
   display: block;
+  padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
   text-align: center;
   text-decoration: none;
 }
@@ -103,7 +95,7 @@ h3 {
 #courses #nav-cou,
 nav a:hover,
 nav a:active {
-  background: blue;
+  background: #90876b;
   color: white;
 }
 /*grid Code for more about me page content*/
@@ -117,30 +109,29 @@ nav a:active {
   grid-template-columns: repeat(1, auto);
 }
 #history {
+  background-color: #E1DAC5;
   grid-area: hist;
-  background-color: silver;
 }
 #edu-about {
+  background-color: #E1DAC5;
   grid-area: edu-a;
-  background-color: silver;
 }
 #work-about {
+  background-color: #E1DAC5;
   grid-area: work-a;
-  background-color: silver;
 }
 #hobbies {
+  background-color: #E1DAC5;
   grid-area: hob;
-  background-color: silver;
 }
 /*flex Code for my resume page nav*/
 #resume-links {
-  background-color: orange;
+  background-color: #625C44;
   font-size: 1.2em
 }
 #resume-nav a {
   padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
-  background-color: orange;
-  border: 1px solid lightgreen;
+  border: 1px solid #E1DAC5;
   border-radius: .25em;
   color: white;
   display: block;
@@ -148,13 +139,16 @@ nav a:active {
   text-decoration: none;
 }
 .description {
-  background-color: silver;
+  background-color: #E1DAC5;
   line-height: 1.3em;
-  padding: 10%;
   list-style: circle;
+  padding: 10%;
 }
 /*style code for reume page*/
-#personal-info, #college-education, #college-awards, #list-skills {
+#personal-info,
+#college-education,
+#college-awards,
+#list-skills {
   font-size: 1.2em;
   line-height: 1.3em;
   padding-left: 5%;
@@ -217,35 +211,40 @@ a[href="#ssci"] {
   grid-area: sscia;
 }
 #course-nav a {
-  padding: .65625em .65625em; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
-  background-color: purple;
-  border: 1px solid lightgreen;
+  background-color: #625C44;
+  border: 1px solid #E1DAC5;
   border-radius: .25em;
   color: white;
   display: block;
   font-size: 1.2em;
+  padding: .65625em .65625em; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
   text-align: center;
   text-decoration: none;
 }
 .class-name-link {
-  padding: .65625em;
   font-size: 1em;
+  padding: .65625em;
 }
 /*Code for back button*/
 #back {
   background-color: #E1DAC5;
-  color: white;
   font-size: 1.2em;
   line-height: 1.3em;
   padding-right: 5%;
   text-align: right;
+}
+#back a,
+#list-of-media a {
+  color: #524827;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /*Code for footer*/
     /*Grid*/
 footer {
   background-color: #625C44;
+  color: white;
   display: flex;
   flex-direction: column;
   font-size: 1.44em;
@@ -280,9 +279,14 @@ footer {
     line-height: 1.3em;
   }
   .class-name-link {
-    padding: .65625em;
     font-size: 1.2em;
+    padding: .65625em;
 }
+  .description {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    padding: 5%;
+  }
 @media screen and (min-width: 1000px) {
   img {
     margin-left: 36%; /*1000-291 = 709/1000= 71/2 =36%*/
@@ -306,7 +310,6 @@ footer {
     line-height: 1.30201em;
     padding-right: 10%;
   }
-
 }
 @media screen and (min-width: 1500px) {
   img {
