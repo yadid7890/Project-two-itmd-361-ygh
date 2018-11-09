@@ -28,6 +28,15 @@ img {
   margin-left: 10%;
   margin-top: 10%;
 }
+/*Style code for p elements*/
+p {
+  font-size: 1em;
+  line-height: 1.3;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  padding-top: .65em;
+  padding-bottom: .65em;
+}
 /*Style code for h1*/
 h1 {
   background-color: tan;
@@ -37,16 +46,40 @@ h1 {
   line-height: 1.30435em;
   padding: 10%;
 }
+/*Style code for h2 */
+h2 {
+  background-color: pink;
+  font-size: 2.074em;
+  line-height: 1.29604em; /*33px*1.3= 43px/33.178px=1.29604em */
+  padding: .64802em;
+}
+/*Style code for h3 */
+h3 {
+  background-color: black;
+  color: white;
+  font-size: 1.44em;
+  line-height: 1.29604em; /*33px*1.3= 43px/33.178px=1.29604em */
+  padding-left: .64802em;
+  padding-right: .64802em;
+}
+/*Style code resume employers and dates */
+.employer,
+.dates {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.30208em; /*19px*1.3= 25px/19.2px=1.30208em */
+  padding-left: .65104em;
+  padding-right: .65104em;
+}
 /*Code for about main pages navigations (about me, my resume, my course catalog)*/
     /*flex*/
-.main-nav { /*ul element*/
-  background-color: lightblue;
+#main-nav { /*ul element*/
   display: flex;
   flex-wrap: row wrap;
-  font-size: 1.728em;
+  font-size: 1em
 }
 #navigation li {
-  flex: 1 1 auto;
+  flex: 1 1 25%;
 }
 #navigation a {
   padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
@@ -67,13 +100,141 @@ nav a:active {
   background: green;
   color: white;
 }
+/*grid Code for more about me page content*/
+#info {
+  display: grid;
+  grid-template-areas:
+  "hist"
+  "hob"
+  "work-a"
+  "edu-a";
+  grid-template-columns: repeat(1, auto);
+}
+#history {
+  grid-area: hist;
+  background-color: silver;
+}
+#edu-about {
+  grid-area: edu-a;
+  background-color: silver;
+}
+#work-about {
+  grid-area: work-a;
+  background-color: silver;
+}
+#hobbies {
+  grid-area: hob;
+  background-color: silver;
+}
+/*flex Code for my resume page nav*/
+#resume-links {
+  background-color: orange;
+  font-size: 1.2em
+}
+#resume-nav a {
+  padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
+  background-color: orange;
+  border: 1px solid lightgreen;
+  border-radius: .25em;
+  color: white;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.description {
+  background-color: silver;
+  padding: 10%;
+}
+/*flex code for course navigation*/
+/*grid code for list of courses use with grid only**/
+#course-list {
+  display: grid;
+  grid-template-areas:
+  "commu com-sc"
+  "eco his"
+  "ipro itmd"
+  "maths phils"
+  "phy pol-sc"
+  "psycs socs"
+  "sscia .";
+  grid-template-columns: repeat(2, 1fr);
+}
+a[href="#com"] {
+  grid-area: commu;
+  background-color: yellow;
+}
+a[href="#cs"] {
+  grid-area: com-sc;
+  background-color: yellow;
+}
+a[href="#econ"] {
+  grid-area: eco;
+  background-color: yellow;
+}
+a[href="#hist"] {
+  grid-area: his;
+  background-color: yellow;
+}
+a[href="#ipro"] {
+  grid-area: ipro;
+  background-color: yellow;
+}
+a[href="#itmd"] {
+  grid-area: itmd;
+  background-color: yellow;
+}
+a[href="#math"] {
+  grid-area: maths;
+  background-color: yellow;
+}
+a[href="#phil"] {
+  grid-area: phils;
+  background-color: yellow;
+}
+a[href="#phys"] {
+  grid-area: phy;
+  background-color: yellow;
+}
+a[href="#ps"] {
+  grid-area: pol-sc;
+  background-color: yellow;
+}
+a[href="#psyc"] {
+  grid-area: psycs;
+  background-color: yellow;
+}
+a[href="#soc"] {
+  grid-area: socs;
+  background-color: yellow;
+}
+a[href="#ssci"] {
+  grid-area: sscia;
+  background-color: yellow;
+}
+#course-nav a {
+  padding: .65625em 0; /*10.5px/16px=.65625em    .65625em is for top and bottom, 0 is for left and right*/
+  background-color: purple;
+  border: 1px solid lightgreen;
+  border-radius: .25em;
+  color: white;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.class-name-link {
+  padding: 1.30208;
+  font-size: 1em;
+}
+
 /*Code for footer*/
     /*Grid*/
 footer {
-background-color: green;
-display: flex;
-flex-direction: column;
-padding-top: 10%;
-padding-bottom: 10%;
-text-align: center;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.44em;
+  line-height: 1.30201em;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
 }
